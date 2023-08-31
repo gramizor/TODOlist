@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo">
+            <div class="header">
+                <div class="header-content">
+                    <h2><img src="img/tasks.png" alt="tasks icon">Какие планы на сегодня?</h2>
+                    <button onclick="showBtn()" class="show-btn">Доп. кнопки</button>
+                </div>
+            </div>
+            <div class="btn-section">
+                <div class="btn-row">
+                    <button onclick="deleteLast()" class="dop-btn hidden">удалить<br>последний</button>
+                    <button onclick="deleteFirst()" class="dop-btn hidden">удалить<br>первый</button>
+                    <button onclick="delDone()" class="dop-btn hidden">удалить<br>сделанные</button>
+                    <button onclick="even()" class="dop-btn hidden">выделить<br>четные</button>
+                    <button onclick="odd()" class="dop-btn hidden">выделить<br>нечетные</button>
+                    <button onclick="clearHighlight()" class="dop-btn hidden">снять<br>выделения</button>
+                </div>
+            </div>
+            <div class="add-task">
+                <input type="text" id="new-task" placeholder="Введите цель...">
+                <button onclick="addBtn()" class="add-btn">Добавить</button>
+            </div>
+            <ul id="all-tasks"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
